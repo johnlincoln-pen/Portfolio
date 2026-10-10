@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>John Lincoln Kokkiligadda | VAPT Analyst &amp; SOC Aspirant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="#top">JL</a>
+<a class="nav-link" href="#bugs">Bugs found</a><a class="nav-link" href="#wins">Achievements</a><a class="nav-link" href="#work">Work</a><a class="nav-link" href="#iot">IoT</a><a class="nav-link" href="#skills">Skills</a><a class="nav-link" href="#passion">Passion</a><a class="nav-link" href="#contact">Contact</a>
+<button id="theme-toggle" aria-label="Switch between light and dark theme"><span id="theme-icon" aria-hidden="true">💡</span> <span id="theme-label">Dark mode</span></button>
+</nav></div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div class="hero-content">
+<h1>John Lincoln Kokkiligadda</h1>
+<p class="role">Aspiring VAPT Analyst, Penetration Tester and SOC L1 Analyst</p>
+<p class="intro">Security professional in training with hands-on freelance VAPT experience. I uncover critical vulnerabilities in live web applications and turn them into clear, actionable remediation for clients.</p>
+<div class="buttons"><a class="btn btn-solid" href="#bugs">See my bug findings</a><a class="btn btn-outline" href="#contact">Get in touch</a></div>
+</div></div></div>
+
+<section id="bugs" class="soft"><div class="wrap">
+<h2>Bugs I found</h2>
+<p class="lead">Findings are listed at a high level on purpose, with no exploit details. The two college portal bugs were reported through responsible disclosure.</p>
+<div class="grid">
+<article class="card critical"><h3>IDOR in the QISCET ECAP student portal</h3><p>Insecure Direct Object Reference found independently in a live student portal. I triaged it and disclosed it to the college administration.</p><span class="tag">IDOR</span><span class="tag">Access control</span><span class="tag">Disclosed</span></article>
+<article class="card critical"><h3>IDOR in the PACE ECAP student portal</h3><p>The same class of flaw in a second institution's portal. Reported to its administration through responsible disclosure.</p><span class="tag">IDOR</span><span class="tag">Access control</span><span class="tag">Disclosed</span></article>
+<article class="card"><h3>Access-control flaws in a Hospital Management System</h3><p>During a freelance engagement I found and reported several critical access-control weaknesses, with remediation guidance for the client.</p><span class="tag">Client project</span><span class="tag">Burp Suite</span><span class="tag">Remediation</span></article>
+<article class="card critical"><h3>Remote Code Execution (RCE) on maxfashoin.in</h3><p>Found a critical RCE bug while testing this online e-commerce website, the most severe class of web vulnerability.</p><span class="tag">RCE</span><span class="tag">E-commerce</span><span class="tag">Critical</span></article>
+<article class="card critical"><h3>Price manipulation in a market loan app</h3><p>Found a parameter tampering flaw that let a request change the price the server accepted. Tested during a freelance VAPT project.</p><span class="tag">Parameter tampering</span><span class="tag">Price manipulation</span><span class="tag">Business logic</span></article>
+<article class="card"><h3>Bike Management System assessment</h3><p>Ran a full bug-testing engagement on this web application as a freelance VAPT analyst, with a report for the client.</p><span class="tag">Freelance VAPT</span><span class="tag">Web application</span></article>
+</div></div></section>
+
+<section id="wins"><div class="wrap">
+<h2>Achievements</h2>
+<p class="lead">Certifications, competitions and the work behind them.</p>
+<div class="grid">
+<div class="card"><h3>ISC2 Certified in Cybersecurity (CC)</h3><p>Completed.</p></div>
+<div class="card"><h3>Certified Ethical Hacker (CEH) v13</h3><p>In progress.</p></div>
+<div class="card"><h3>CREST CTF, Pimpri Chinchwad University</h3><p>2025. Team CTF covering web exploitation, cryptography and reverse engineering.</p></div>
+<div class="card"><h3>Life Tech Pro Hackathon, VR Siddhartha, Vijayawada</h3><p>2025. Competed in a technical problem-solving environment with cross-team collaboration.</p></div>
+<div class="card"><h3>Responsible disclosure, twice</h3><p>Two vulnerabilities in production portals, reported to the owners instead of exploited.</p></div>
+<div class="card"><h3>Origin Null CTF</h3><p>Competed in the Origin Null capture-the-flag, sharpening vulnerability discovery and problem-solving under pressure.</p></div>
+<div class="card"><h3>TryHackMe</h3><p>Ongoing hands-on labs as <a href="https://tryhackme.com/p/roronoazoroo4701">roronoazoroo4701</a>.</p></div>
+</div></div></section>
+
+<section id="work" class="soft"><div class="wrap">
+<h2>Work and projects</h2>
+<p class="lead">Client testing, plus tools I built to analyse threats.</p>
+<div class="timeline">
+<div class="item"><h3>Freelance VAPT Analyst, independent client projects (remote)</h3><div class="when">Last 2 months to present</div>
+<ul><li>Ran vulnerability assessment and penetration tests on client web applications, including a Hospital Management System.</li><li>Reported findings by severity with client-ready documentation and fixes.</li><li>Tested a Bike Management System, a market loan app (found parameter tampering and price manipulation) and the e-commerce site maxfashoin.in (found RCE).</li><li>Used Burp Suite, Nmap, Metasploit, Wireshark and Splunk across web, network and log data.</li></ul></div>
+<div class="item"><h3>JCrypt: Python message encryption and decryption tool</h3><div class="when">Python, command line, cryptography. <a href="https://github.com/johnlincoln-pen/JCrypt_Tool">View on GitHub</a></div>
+<ul><li>A command-line tool that encrypts a message with a password and decrypts it later. File encryption is on the roadmap.</li><li>Designed around safe practice: a random salt for every message, a password-based key derivation function (Argon2id or scrypt), then authenticated encryption (AES-GCM or ChaCha20-Poly1305) from a trusted library, never a homemade algorithm.</li><li>A wrong password or tampered ciphertext is rejected instead of returning corrupted text.</li><li>Built as an educational and defensive security project, split into CLI, crypto and key-management modules with unit tests planned.</li></ul></div>
+<div class="item"><h3>Firewall Analyzer</h3><div class="when">2025, Python</div>
+<ul><li>Parses firewall logs, detects port scans and anomalous IP behaviour, and generates structured HTML threat reports.</li></ul></div>
+<div class="item"><h3>Phishing Email Detection System</h3><div class="when">2025, machine learning and NLP</div>
+<ul><li>Trained a classifier on header analysis and language patterns to flag spoofed senders and social engineering.</li></ul></div>
+</div></div></section>
+
+<section id="iot"><div class="wrap">
+<h2>IoT projects</h2>
+<p class="lead">Hardware and embedded builds, from physical-access red-team tools to sensor-based automation.</p>
+<div class="grid">
+<article class="card critical"><h3>Digispark ATtiny85 HID keystroke-injection tool</h3><p>Built a BadUSB-style device on the Digispark ATtiny85, which registers as a keyboard and runs a pre-programmed keystroke payload the moment it's plugged in. Used to demonstrate physical-access and HID-based attack risks during authorized red-team exercises.</p><span class="tag">ATtiny85</span><span class="tag">HID attack</span><span class="tag">Physical security</span><span class="tag">Red team</span></article>
+<article class="card"><h3>Smart Irrigation System</h3><p>A sensor-driven irrigation project that reads soil moisture and environmental data to automate watering, reducing manual monitoring and water waste.</p><span class="tag">Soil moisture sensor</span><span class="tag">Automation</span><span class="tag">Embedded C</span></article>
+<article class="card"><h3>Additional IoT builds</h3><p>A series of smaller microcontroller projects exploring sensors, automation and device-level security, built to understand how IoT hardware behaves and where it can be hardened.</p><span class="tag">Microcontrollers</span><span class="tag">Sensors</span><span class="tag">IoT security</span></article>
+</div></div></section>
+
+<section id="passion"><div class="wrap passion-grid">
+<div><h2>Professional focus</h2><p class="quote">Security failures begin where a system trusts more than it should. My work is to find those points first and help close them.</p></div>
+<div>
+<p>I am committed to offensive security as a discipline of careful, evidence-based testing. Through freelance VAPT engagements, CTF competitions and continuous lab practice, I have built a methodical approach to finding flaws in access control, business logic and application code.</p>
+<p>I treat a finding as complete only when it is documented, rated by risk and reported responsibly, with remediation guidance the owners can act on.</p>
+<p>I am building depth on both sides of security: penetration testing to understand how attacks work, and monitoring with Splunk and Wireshark to detect and respond to them.</p>
+</div></div></section>
+
+<section class="soft"><div class="wrap">
+<h2 id="skills">Skills and tools</h2>
+<p class="lead">The tools I use every day, and what I use them for.</p>
+<div class="tools"><span class="tool">Burp Suite</span><span class="tool">Nmap</span><span class="tool">Metasploit</span><span class="tool">Nessus</span><span class="tool">Wireshark</span><span class="tool">Splunk</span><span class="tool">Kali Linux</span><span class="tool">Python</span></div>
+<div class="grid">
+<div class="card"><h3>Penetration testing</h3><span class="tag">Web app VAPT</span><span class="tag">Network VAPT</span><span class="tag">OWASP Top 10</span><span class="tag">IDOR</span><span class="tag">RCE</span><span class="tag">Parameter tampering</span><span class="tag">Access control</span><span class="tag">Manual and automated testing</span></div>
+<div class="card"><h3>SOC and monitoring</h3><span class="tag">Log analysis</span><span class="tag">Threat detection</span><span class="tag">Alert triage</span><span class="tag">Incident response</span><span class="tag">MITRE ATT&amp;CK</span><span class="tag">Snort/Suricata concepts</span></div>
+<div class="card"><h3>Systems and scripting</h3><span class="tag">TCP/IP</span><span class="tag">OSI model</span><span class="tag">DNS/HTTP analysis</span><span class="tag">Linux</span><span class="tag">Windows</span><span class="tag">Python automation</span><span class="tag">Cryptography basics</span></div>
+<div class="card"><h3>Reporting</h3><span class="tag">Risk rating</span><span class="tag">Remediation guidance</span><span class="tag">Responsible disclosure</span><span class="tag">Client communication</span></div>
+</div>
+<h2 class="spaced">Education</h2>
+<div class="grid">
+<div class="card"><h3>B.Tech, IoT &amp; Cybersecurity incl. Blockchain</h3><p>QIS College of Engineering &amp; Technology, 2024 to 2027 (expected). CGPA 7.62/10.</p></div>
+<div class="card"><h3>Diploma, Computer Science Engineering</h3><p>Rise Krishna Sai Institution, 2021 to 2024. 77.17%.</p></div>
+</div></div></section>
+</main>
+
+<footer id="contact"><div class="wrap">
+<h2>Let's talk security</h2>
+<p class="lead centered">Open to entry-level VAPT, penetration testing and SOC L1 roles, and to freelance testing.</p>
+<div class="links">
+<a class="btn btn-solid" href="mailto:kokkiligadda.johnlincoln@gmail.com">Email me</a>
+<a class="btn btn-outline" href="https://linkedin.com/in/k-john-lincoln">LinkedIn</a>
+<a class="btn btn-outline" href="https://github.com/JohnLincoln-k">GitHub</a>
+<a class="btn btn-outline" href="https://tryhackme.com/p/roronoazoroo4701">TryHackMe</a>
+</div>
+<p><small>Ongole, Andhra Pradesh, India</small></p>
+</div></footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
